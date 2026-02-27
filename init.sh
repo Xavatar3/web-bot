@@ -33,8 +33,8 @@ sudo apt install -y \
 
 echo "Done. Logs saved in logs/ folder."
 
-git add logs/apt_update.log logs/apt_install.log
-git commit -m "Add Playwright Chromium dependencies installation logs"
-git push origin main
+git add logs/apt_update.log logs/apt_install.log logs/playwright.log | tee logs/git.log
+git commit -m "Add Playwright Chromium dependencies installation logs" | tee -a logs/git.log
+git push origin main | tee -a log/git.log
 #npx playwright install chromium
-node src/script.js
+node src/script.js | tee logs/playwright.log
