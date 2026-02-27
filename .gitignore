@@ -1,10 +1,16 @@
-# Logs
-logs/
+# Ignore everything in logs
+logs/*
+
+# Except specific Playwright logs
+!logs/git.log
 !logs/apt_update.log
 !logs/apt_install.log
 !logs/playwright.log
-logs
+
+# Ignore general log files elsewhere
 *.log
+
+# Ignore npm/yarn debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
