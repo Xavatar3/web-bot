@@ -35,7 +35,7 @@ echo "Running Playwright script..." | tee -a logs/playwright.log
 node src/script.js 2>&1 | tee -a logs/playwright.log
 
 echo "Committing logs..." | tee -a logs/git.log
-git add logs/apt_update.log logs/apt_install.log logs/playwright.log
+git add -f logs/apt_update.log logs/apt_install.log logs/playwright.log
 git commit -m "Add Playwright Chromium dependencies installation logs" | tee -a logs/git.log
 git push origin main | tee -a logs/git.log
 
