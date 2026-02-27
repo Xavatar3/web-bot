@@ -1,5 +1,14 @@
-# Ignore everything in logs
+# unignore the directory
+!logs/
+
+# ignore everything inside
 logs/*
+
+# re‑include specific logs
+!logs/git.log
+!logs/apt_update.log
+!logs/apt_install.log
+!logs/playwright.log
 
 # Except specific Playwright logs
 !logs/git.log
