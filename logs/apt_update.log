@@ -1,0 +1,11 @@
+Updating package lists...
+Get:1 https://dl.yarnpkg.com/debian stable InRelease
+Hit:2 https://repo.anaconda.com/pkgs/misc/debrepo/conda stable InRelease
+Hit:3 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Err:1 https://dl.yarnpkg.com/debian stable InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 62D54FD4003F6525
+Hit:4 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:6 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:7 http://security.ubuntu.com/ubuntu noble-security InRelease
+Reading package lists...
